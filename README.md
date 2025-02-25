@@ -11,7 +11,7 @@ It is inspired from **[GitHub user activity](https://roadmap.sh/projects/github-
 ## Installation
 
 ```sh
-pip install git+git@github.com:itsukuna/gitact.git
+pip install git+https://github.com/itsukuna/gitact.git
 ```
 
 ## Usage
