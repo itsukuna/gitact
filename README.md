@@ -1,17 +1,27 @@
 # Gitact
 
-Gitact is a CLI tool to fetch and display the latest GitHub envets for a user. It leverages the GitHub API to retrieve various types of user activities, such as commits, comments, and repository creations.
+Gitact is a CLI tool to fetch and display the latest GitHub events for a user. It leverages the GitHub API to retrieve various types of user activities, such as commits, comments, and repository creations.
 
-It is inspired from **[GitHub user activity](https://roadmap.sh/projects/github-user-activity)** project on **[Roadmap.sh](https://roadmap.sh/)**
+It is inspired by **[GitHub user activity](https://roadmap.sh/projects/github-user-activity)** project on **[Roadmap.sh](https://roadmap.sh/)**.
 
 ## Prerequisites
 
-- Python 3.10
+- Python 3.10+
+- [pipx](https://pypa.github.io/pipx/)
 
 ## Installation
 
+Gitact is best installed using `pipx`, which ensures it runs in an isolated environment:
+
 ```sh
-pip install git+https://github.com/itsukuna/gitact.git
+pipx install git+https://github.com/itsukuna/gitact.git
+```
+
+If you don't have `pipx` installed, you can install it first:
+
+```sh
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
 ```
 
 ## Usage
@@ -28,6 +38,14 @@ Replace `<username>` with the GitHub username you want to fetch events for.
 
 ```sh
 gitact itsukuna
+```
+
+## Uninstallation
+
+To remove Gitact, use:
+
+```sh
+pipx uninstall gitact
 ```
 
 ## License
